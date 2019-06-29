@@ -16,29 +16,37 @@
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
-nav{
-    background:linear-gradient(90deg,#2193b0,#6dd5ed );
+nav {
+    background:linear-gradient(90deg,#ffffff,#2193b0 );
 	height:100px;
-	width:100%;
-	position:fixed;
+    width:100%;
+    position:fixed !important;
     display:flex !important;
     flex-direction: row !important;
-	align-items:center !important;
-	justify-content:flex-end !important;
+    justify-content: space-between;
     z-index:1;
     animation: slidingLeft 1s linear !important;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    
 }
-nav a{
+nav img {
+    margin-left:5%;
+    height:100%;
+}
+nav div{  
+    display:flex !important;
+    flex-direction: row !important;
+	align-items:center !important;
+	justify-content:flex-end !important;   
+}
+nav div a{
     color:#302b63 !important;
     font-size:30px;
     font-weight:bold;
-    margin:0 5% 0 5%;
+    margin:0 15% 0 15%;
     padding: 0 5px 0 5px;
 }
-nav a:hover{
+nav div a:hover{
     text-decoration: none;
     background-color:#8984c3 !important;
     opacity: 0.8;
@@ -133,7 +141,7 @@ footer div a img{
         transform: scale(1);
     }
     100%{
-        transform: scale(1.05);
+        transform: scale(0.85);
     }
 }
 
@@ -141,7 +149,6 @@ footer div a img{
     0%{
         left:-100%;
         opacity: 0.2;
-        background-color:red;
         border-top-right-radius: 50%;
         border-bottom-right-radius: 50%;
     }
